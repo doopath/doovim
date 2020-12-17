@@ -2,6 +2,8 @@
 ## What is doovim?
 **Doovim is my personal vim (neovim) config that I use in my work**
 
+![no image](https://github.com/sha1om/doovim/blob/main/screenshots/doovim.png?raw=true)
+
 ## How to install doovim?
 **You have two ways to install doovim configuration**
 
