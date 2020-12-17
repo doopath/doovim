@@ -16,13 +16,13 @@ sudo ./install
 ```
 
 
-**Or install it yourself (on arch-linux):**
+**Or install it yourself (arch-linux example):**
 ```shell
 git clone https://github.com/sha1om/doovim.git
 cd doovim
 
 // Use your packmanager (apt/pacman/dnf)
-sudo pacman -S vim neovim nodejs python pythoon-dev
+sudo pacman -S vim neovim nodejs python
 mkdir ~/.config/nvim
 cp ./init.vim ~/.config/nvim/
 
