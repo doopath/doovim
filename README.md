@@ -1,8 +1,8 @@
-#Doovim
-##What is doovim?
+# Doovim
+## What is doovim?
 **Doovim is my personal vim (neovim) config that I use in my work**
 
-##How to install doovim?
+## How to install doovim?
 **You have two ways to install doovim configuration**
 
 
