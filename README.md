@@ -1,6 +1,6 @@
 # Doovim
 ## What is doovim?
-**Doovim is my personal vim (neovim) config that I use in my work**
+**Doovim is my personal vim (neovim) config**
 
 ![no image](https://github.com/sha1om/doovim/blob/main/screenshots/doovim.png?raw=true)
 
@@ -8,7 +8,7 @@
 **You have two ways to install doovim configuration**
 
 
-**You can do it with installing binary (written on pyton):**
+**You can do it with installing binary (written on python):**
 ```shell
 git clone https://github.com/sha1om/doovim.git
 cd doovim
