@@ -66,7 +66,7 @@ call plug#end()
 syntax on
 highlight Normal ctermbg=NONE
 set termguicolors
-colorscheme forest-night
+colorscheme sonokai
 " Available themes: nord, gruvbox, dracula, forest-night, edge, sonokai
 
 hi Normal guibg=NONE ctermbg=NONE
