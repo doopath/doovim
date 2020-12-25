@@ -3,6 +3,7 @@
 **Doovim is my personal vim (neovim) config**
 
 ![no image](https://github.com/sha1om/doovim/blob/main/screenshots/doovim.png?raw=true)
+![no image](https://github.com/sha1om/doovim/blob/main/screenshots/doovim_full.png?raw=true)
 
 ## How to install doovim?
 **You have two ways to install doovim configuration**

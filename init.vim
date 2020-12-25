@@ -42,8 +42,14 @@ Plug 'dense-analysis/ale'
 " Apprearance plugins ==>
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'ulwlu/elly.vim'
 
-" These themes are created by really cool guy https://github.com/sainnhe ==>
+" Transparent vim
+Plug 'kjwon15/vim-transparent'
+
+" These themes are created by this awesome guy https://github.com/sainnhe ==>
 Plug 'sainnhe/forest-night'
 Plug 'sainnhe/edge'
 Plug 'sainnhe/sonokai'
@@ -59,16 +65,21 @@ Plug 'honza/vim-snippets' " Also, makes your exp more better
 " Live server inside the code-editor like VSCode live-server
 Plug 'turbio/bracey.vim'
 
-Plug 'tpope/vim-fugitive' " Convetien git supporter
 call plug#end() 
 
 " Appearance settings
 syntax on
 highlight Normal ctermbg=NONE
 set termguicolors
-colorscheme sonokai
+colorscheme nord
 " Available themes: nord, gruvbox, dracula, forest-night, edge, sonokai
+" ---: vim-material, onedark, elly
 
+" Make status line transparent (yes, yes, yes...)
+set laststatus=2
+hi statusline guibg=#FFFFFFFF guifg=#D8DEE9
+
+" Make transparent background
 hi Normal guibg=NONE ctermbg=NONE
 
 " Edge-colorscheme settings
@@ -81,7 +92,7 @@ let g:gruvbox_underline = 1
 let g:gruvbox_contrast_light = "medium"
 
 " GUI
-set guifont=Hasklug\ Nerd\ Font:h15:w5:b " 11 is pretty fine
+set guifont=Inconsolata:h15:w5:b " 11 is pretty fine
 set linespace=2
 
 " Main config 
@@ -124,7 +135,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 " NerdTree enable
 map <C-n> :NERDTreeToggle<CR>
 
-" Let vim-easymotion do its things by ,+s hotkey
+" Let vim-easymotion to do its things by ,+s hotkey
 map <Leader> <Plug>(easymotion-prefix)
 
 " Buffers maps
@@ -145,18 +156,13 @@ nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
 
 
-" enable 24bit true color
-if (has("termguicolors"))
-  set termguicolors
-endif
-
 " Mappings to move between plited windows by WinMove function
 map <silent> <C-h> :call WinMove('h')<CR>
 map <silent> <C-j> :call WinMove('j')<CR>
 map <silent> <C-k> :call WinMove('k')<CR>
 map <silent> <C-l> :call WinMove('l')<CR>
 
-" This one serves to give you move between splited windows and create these
+" This one let you move between splited windows and create these
 function! WinMove(key)
   let t:curwin = winnr()
   exec "wincmd ".a:key
