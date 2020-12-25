@@ -9,7 +9,7 @@
 **You have two ways to install doovim configuration**
 
 
-**You can do it with installing binary (written on python):**
+**You can do it with installing binary:**
 ```shell
 git clone https://github.com/sha1om/doovim.git
 cd doovim
