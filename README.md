@@ -13,7 +13,8 @@
 ```shell
 git clone https://github.com/sha1om/doovim.git
 cd doovim
-sudo ./install
+chmod +x install
+./install
 ```
 
 
