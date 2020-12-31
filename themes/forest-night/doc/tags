@@ -1,0 +1,16 @@
+forest-night-configuration	forest-night.txt	/*forest-night-configuration*
+forest-night-contents	forest-night.txt	/*forest-night-contents*
+forest-night-faq	forest-night.txt	/*forest-night-faq*
+forest-night-installation	forest-night.txt	/*forest-night-installation*
+forest-night-introduction	forest-night.txt	/*forest-night-introduction*
+forest-night-usage	forest-night.txt	/*forest-night-usage*
+forest-night.txt	forest-night.txt	/*forest-night.txt*
+g:forest_night_better_performance	forest-night.txt	/*g:forest_night_better_performance*
+g:forest_night_current_word	forest-night.txt	/*g:forest_night_current_word*
+g:forest_night_cursor	forest-night.txt	/*g:forest_night_cursor*
+g:forest_night_diagnostic_line_highlight	forest-night.txt	/*g:forest_night_diagnostic_line_highlight*
+g:forest_night_disable_italic_comment	forest-night.txt	/*g:forest_night_disable_italic_comment*
+g:forest_night_enable_italic	forest-night.txt	/*g:forest_night_enable_italic*
+g:forest_night_lightline_disable_bold	forest-night.txt	/*g:forest_night_lightline_disable_bold*
+g:forest_night_sign_column_background	forest-night.txt	/*g:forest_night_sign_column_background*
+g:forest_night_transparent_background	forest-night.txt	/*g:forest_night_transparent_background*
