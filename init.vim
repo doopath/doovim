@@ -15,6 +15,9 @@ call plug#begin('~/.vim/plugged')
 " Awesome files viewer for vim ==>
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
+" Awesome asynchronous linter
+Plug 'dense-analysis/ale'
+
 " Everyone know this
 Plug 'mattn/emmet-vim'
 
@@ -40,9 +43,9 @@ Plug 'airblade/vim-gitgutter'
 " Colorschemes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
-Plug 'doopath/doobox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'doopath/doobox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ulwlu/elly.vim'
 
@@ -74,7 +77,7 @@ set termguicolors
 
 colorscheme doobox
 " Available themes: nord, gruvbox, dracula, forest-night, edge, sonokai
-" ---: vim-material, onedark, elly, doobox
+" ---: vim-material, onedark, elly
 
 " Make status line transparent (yes, yes, yes...)
 set laststatus=2
