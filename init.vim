@@ -36,26 +36,26 @@ Plug 'preservim/nerdcommenter'
 " Git plugin for vim
 Plug 'airblade/vim-gitgutter'
 
-" Error checker
-Plug 'dense-analysis/ale'
-
 " Apprearance plugins ==>
+" Colorschemes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'doopath/doobox'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ulwlu/elly.vim'
 
 " Transparent vim
 Plug 'kjwon15/vim-transparent'
 
+" Icons for bars (and nerdtree)
+Plug 'ryanoasis/vim-devicons'
+
 " These themes are created by this awesome guy https://github.com/sainnhe ==>
 Plug 'sainnhe/forest-night'
 Plug 'sainnhe/edge'
 Plug 'sainnhe/sonokai'
-
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'ryanoasis/vim-devicons' " Icons for bars (and nerdtree)
 
 " IDE Feautures ==>
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion
@@ -71,9 +71,10 @@ call plug#end()
 syntax on
 highlight Normal ctermbg=NONE
 set termguicolors
-colorscheme nord
+
+colorscheme doobox
 " Available themes: nord, gruvbox, dracula, forest-night, edge, sonokai
-" ---: vim-material, onedark, elly
+" ---: vim-material, onedark, elly, doobox
 
 " Make status line transparent (yes, yes, yes...)
 set laststatus=2
@@ -86,6 +87,9 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:edge_style = 'neon' " neon/aura/light/dark
 let g:edge_enable_italic = 1 " Enable italic comments
 
+" Doome-colorscheme settings
+let g:doome_enable_italic = 1 " Enable italic comments
+
 " Gruvbox colorscheme settings
 let g:gruvbox_bold = 1
 let g:gruvbox_underline = 1
@@ -93,14 +97,14 @@ let g:gruvbox_contrast_light = "medium"
 
 " GUI
 set guifont=Inconsolata:h15:w5:b " 11 is pretty fine
-set linespace=2
 
-" Main config 
+" Some scary things
 filetype plugin on
 set autoindent " Set autoindention then you go inside a function or smth like this
 set clipboard+=unnamedplus " Enable clipboard (if you compiled you vim with it)
 set guioptions+=a " Ability to change gui things
 set softtabstop=2 " Set tabs with two spaces
+set linespace=2
 set tabstop=2
 set shiftwidth=2
 set t_Co=256 
@@ -131,6 +135,9 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" If you are reallly mad: (assembly support)
+map <silent> <C-a> :set ft=fasm<CR>
 
 " NerdTree enable
 map <C-n> :NERDTreeToggle<CR>
