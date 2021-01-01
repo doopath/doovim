@@ -3,7 +3,8 @@
 **Doovim is my personal vim (neovim) config**
 
 ![no image](https://github.com/doopath/doovim/blob/main/screenshots/doovim.png?raw=true)
-![no image](https://github.com/doopath/doovim/blob/main/screenshots/doovim_full.png?raw=true)
+
+**Doovim has custom [doobox](https://github.com/doopath/doobox) theme by default, so you can install it in your vim-based text editor.**
 
 ## How to install doovim?
 **You have two ways to install doovim configuration**
