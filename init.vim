@@ -31,7 +31,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Very usable things ==>
+" Very useful things ==>
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
@@ -42,12 +42,10 @@ Plug 'airblade/vim-gitgutter'
 " Apprearance plugins ==>
 " Colorschemes
 Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'doopath/doobox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ulwlu/elly.vim'
+Plug 'joshdick/onedark.vim'
 
 " Transparent vim
 Plug 'kjwon15/vim-transparent'
@@ -76,8 +74,8 @@ highlight Normal ctermbg=NONE
 set termguicolors
 
 colorscheme doobox
-" Available themes: nord, gruvbox, dracula, forest-night, edge, sonokai
-" ---: vim-material, onedark, elly
+" Available themes: nord, dracula, onedark, doobox
+" Sainnhe themes : edge, forest-night, sonokai
 
 " Make status line transparent (yes, yes, yes...)
 set laststatus=2
@@ -90,16 +88,9 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:edge_style = 'neon' " neon/aura/light/dark
 let g:edge_enable_italic = 1 " Enable italic comments
 
-" Doome-colorscheme settings
-let g:doome_enable_italic = 1 " Enable italic comments
-
-" Gruvbox colorscheme settings
-let g:gruvbox_bold = 1
-let g:gruvbox_underline = 1
-let g:gruvbox_contrast_light = "medium"
-
-" GUI
-set guifont=Inconsolata:h15:w5:b " 11 is pretty fine
+" Font: You need to install Nerd-Fonts ->
+" (https://github.com/ryanoasis/nerd-fonts)
+set guifont=Hasklig\ Semibold:h15:w5:b "
 
 " Some scary things
 filetype plugin on
@@ -140,7 +131,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " If you are reallly mad: (assembly support)
-map <silent> <C-a> :set ft=fasm<CR>
+map <silent> <C-a> :set ft=nasm<CR>
 
 " NerdTree enable
 map <C-n> :NERDTreeToggle<CR>
