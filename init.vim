@@ -29,7 +29,7 @@ Plug 'easymotion/vim-easymotion'
 
 " Status bar plugins ==>
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
 
 " Very useful things ==>
 Plug 'jiangmiao/auto-pairs'
@@ -59,13 +59,12 @@ Plug 'sainnhe/edge'
 Plug 'sainnhe/sonokai'
 
 " IDE Feautures ==>
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocompletion
-Plug 'SirVer/ultisnips' " Powerfoul snippets
-Plug 'honza/vim-snippets' " Also, makes your exp more better
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Conqueror Of Completion
+Plug 'SirVer/ultisnips' " Powerful snippets
+Plug 'honza/vim-snippets' " Also, makes your exp better
 
 " Live server inside the code-editor like VSCode live-server
 Plug 'turbio/bracey.vim'
-
 call plug#end() 
 
 " Appearance settings
@@ -83,6 +82,11 @@ hi statusline guibg=#FFFFFFFF guifg=#D8DEE9
 
 " Make transparent background
 hi Normal guibg=NONE ctermbg=NONE
+" Also, if you want to make you terminal background
+" transparent you need to set it in you terminal configuration
+" If you use konsole: 
+" Right click -> Edit Current Profile -> Appearence -> Edit -> 
+" -> Background Transparency
 
 " Edge-colorscheme settings
 let g:edge_style = 'neon' " neon/aura/light/dark
@@ -162,6 +166,12 @@ map <silent> <C-h> :call WinMove('h')<CR>
 map <silent> <C-j> :call WinMove('j')<CR>
 map <silent> <C-k> :call WinMove('k')<CR>
 map <silent> <C-l> :call WinMove('l')<CR>
+
+" Resize split windows
+map <silent> <C-p> :vertical resize +5<CR>
+map <silent> <C-u> :vertical resize -5<CR>
+map <silent> <C-o> :resize +5<CR>
+map <silent> <C-i> :resize -5<CR>
 
 " This one let you move between splited windows and create these
 function! WinMove(key)
