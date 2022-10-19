@@ -2,8 +2,8 @@
 
 Doovim is my configuration for neovim. It presents a bunch of plugins, settings and keymaps.
 
-![no image](https://raw.githubusercontent.com/doopath/doovim/master/screenshots/preview1.png)
 ![no image](https://raw.githubusercontent.com/doopath/doovim/master/screenshots/preview2.png)
+![no image](https://raw.githubusercontent.com/doopath/doovim/master/screenshots/preview1.png)
 
 # Requirements
 A bunch of requirements you need to have:
