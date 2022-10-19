@@ -14,4 +14,4 @@ A bunch of requirements you need to have:
 - Pynvim from pip
 
 # Installation
-If you have a linux distro then just download the repo and launch _linux_install.py_ overwhise, copy any files from _config_ to your nvim config dir.
+If you have a linux distro then just download the repo and launch _linux_install.py_ overwhise, copy eveything from _config_ to your nvim config dir.
