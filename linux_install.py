@@ -12,8 +12,10 @@ def require_linux(os: str) -> None:
 def get_app_dir() -> str:
     return os.path.dirname(os.path.abspath(sys.argv[0]))
 
+
 def get_log_file() -> str:
     return os.path.join(get_app_dir(), 'logfile.log')
+
 
 class Logger:
     def __init__(self):
