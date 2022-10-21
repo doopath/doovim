@@ -31,8 +31,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'iamcco/markdown-preview.nvim'
 
 -- CSharp and FSharp support
-Plug 'OmniSharp/omnisharp-vim'
-Plug ('ionide/Ionide-vim', { ['do'] = 'make fsautocomplete' })
+-- Plug 'OmniSharp/omnisharp-vim'
+-- Plug ('ionide/Ionide-vim', { ['do'] = 'make fsautocomplete' })
 
 -- Haskell and Cabal support
 -- Plug 'neovimhaskell/haskell-vim'

@@ -64,13 +64,13 @@ class Installer:
         self._create_nvim_config_dir()
 
     def _install_vim_plug(self) -> None:
-        print('\nInstalling vim-plug...')
+        print('\nInstalling vim-plug...\n')
         os.system('sh -c \'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}' \
                   '"/nvim/site/autoload/plug.vim --create-dirs ' \
                   'https://raw.githubusercontent.com/junegunn' \
                   '/vim-plug/master/plug.vim\''\
                   f' >> {self._logfile}')
-        print('vim-plug was successfully installed!\n')
+        print('\nvim-plug was successfully installed!\n')
 
     def _show_installation_end(self) -> None:
         print('Congrats! Doovim config was successfully installed! ' \
